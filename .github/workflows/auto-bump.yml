@@ -46,7 +46,8 @@ jobs:
           echo "latest=$LATEST_VERSION" >> "$GITHUB_OUTPUT"
           echo "current=$CURRENT_VERSION" >> "$GITHUB_OUTPUT"
 
-          if [ "$LATEST_VERSION" = "$CURRENT_VERSION" ]; then
+          # A placeholder hash (all zeros) needs fixing even when the version matches.
+          if [ "$LATEST_VERSION" = "$CURRENT_VERSION" ] && ! grep -qE 'sha256 "0{64}"' Casks/peekaboo.rb; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
           else
             echo "changed=true" >> "$GITHUB_OUTPUT"
