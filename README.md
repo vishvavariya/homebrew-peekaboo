@@ -8,12 +8,7 @@ Homebrew tap for [Peekaboo](https://getpeekaboo.app) — every file on your Mac,
 brew install --cask vishvavariya/peekaboo/peekaboo
 ```
 
-Or as two steps:
-
-```bash
-brew tap vishvavariya/peekaboo
-brew install --cask peekaboo
-```
+The full `vishvavariya/peekaboo/peekaboo` name also tells Homebrew to trust this tap. After a plain `brew tap vishvavariya/peekaboo`, Homebrew refuses the short name until you run `brew trust vishvavariya/peekaboo`.
 
 ## Update
 

@@ -4,7 +4,7 @@ cask "peekaboo" do
 
   url "https://github.com/vishvavariya/peekaboo-releases/releases/download/v#{version}/Peekaboo-#{version}.zip"
   name "Peekaboo"
-  desc "Find, preview and clean up every file on your Mac"
+  desc "Find, preview and clean up every file"
   homepage "https://getpeekaboo.app/"
 
   livecheck do
@@ -32,8 +32,8 @@ cask "peekaboo" do
     "~/Library/HTTPStorages/app.getpeekaboo.Peekaboo.binarycookies",
     "~/Library/LaunchAgents/app.getpeekaboo.Peekaboo*.plist",
     "~/Library/Logs/app.getpeekaboo.Peekaboo",
-    "~/Library/Preferences/ByHost/app.getpeekaboo.Peekaboo.*.plist",
     "~/Library/Preferences/app.getpeekaboo.Peekaboo.plist",
+    "~/Library/Preferences/ByHost/app.getpeekaboo.Peekaboo.*.plist",
     "~/Library/Saved Application State/app.getpeekaboo.Peekaboo.savedState",
     "~/Library/WebKit/app.getpeekaboo.Peekaboo",
   ]
