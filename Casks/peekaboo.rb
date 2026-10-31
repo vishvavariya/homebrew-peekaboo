@@ -9,7 +9,7 @@ cask "peekaboo" do
 
   livecheck do
     url "https://getpeekaboo.app/appcast.xml"
-    strategy :sparkle
+    strategy :sparkle, &:short_version
   end
 
   auto_updates true
