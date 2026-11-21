@@ -1,6 +1,6 @@
 cask "peekaboo" do
-  version "0.1.22"
-  sha256 "f5c61b6cccd121e29c56ebcba24fd681058172acfe1b799f8d36bfb6490f6c71"
+  version "0.1.23"
+  sha256 "0f5a6e5f4e52e405626a73b911f45caebd90cce438e6c8eadbb7e9c481c247f7"
 
   url "https://github.com/vishvavariya/peekaboo-releases/releases/download/v#{version}/Peekaboo-#{version}.zip"
   name "Peekaboo"
